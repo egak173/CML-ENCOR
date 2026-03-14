@@ -1,2 +1,2 @@
 # CML-ENCOR
-Cisco ENCOR CCNP Labs
+Cisco CCNP ENCOR Labs
