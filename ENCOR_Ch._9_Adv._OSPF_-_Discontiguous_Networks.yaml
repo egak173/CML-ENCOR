@@ -1,0 +1,1339 @@
+annotations:
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    thickness: 1
+    type: ellipse
+    x1: -500.0
+    y1: -200.0
+    x2: 220.0
+    y2: 120.0
+    z_index: 1
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Area 12 - P2P
+      10.12.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -560.0
+    y1: -360.0
+    z_index: 3
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 90
+    thickness: 1
+    type: ellipse
+    x1: -280.0
+    y1: 20.0
+    x2: 220.0
+    y2: 120.0
+    z_index: 2
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 90
+    thickness: 1
+    type: ellipse
+    x1: 160.0
+    y1: 20.0
+    x2: 220.0
+    y2: 120.0
+    z_index: 2
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    thickness: 1
+    type: ellipse
+    x1: -60.0
+    y1: -200.00000000000003
+    x2: 220.0
+    y2: 120.0
+    z_index: 1
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    thickness: 1
+    type: ellipse
+    x1: 380.0
+    y1: -200.0
+    x2: 220.0
+    y2: 120.0
+    z_index: 1
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Area 0
+      10.2.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -200.0
+    y1: 120.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Area 34 - P2P
+      10.34.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 320.0
+    y1: -360.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Area 23 - P2P
+      10.23.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -119.95090199569557
+    y1: -365.74351819083154
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Area 0
+      10.3.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 0.0
+    y1: 120.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: '.2'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 560.0
+    y1: -240.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: '.1'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 69.43184271838935
+    y1: -188.90574765277222
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: '.2'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -680.0
+    y1: -240.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: "Config template using network statements\n\nconf t\nhostname r2\n\
+      int l0\n\tip address 2.2.2.2 255.255.255.255\nint e0/0\n\tip address 10.12.1.1\
+      \ 255.255.255.0\n\tip ospf network point-to-point\n\tno shut\nint e0/1\n\tip\
+      \ address 10.23.1.1 255.255.255.0\n\tip ospf network point-to-point\n\tno shut\n\
+      int e0/2\n\tip address 10.2.1.1\n\tno shut\nrouter ospf 1\n\trouter-id 192.168.1.2\n\
+      \tpassive-interface default\n\tno passive-interface e0/0\n\tno passive-interface\
+      \ e0/1\n\tnetwork 2.2.2.2 0.0.0.0 area 0\n\tnetwork 10.12.0.0 0.0.255.255 area\
+      \ 12\n\tnetwork 10.23.0.0 0.0.255.255 area 23\n\tnetwork 10.2.0.0 0.0.255.255\
+      \ area 0\n\tend\nwr mem"
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -1120.0
+    y1: -240.0
+    z_index: 3
+  - border_color: '#EE9106'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 6
+    type: line
+    x1: 200.0
+    y1: -120.0
+    x2: 360.0
+    y2: -120.0
+    z_index: 4
+  - border_color: '#EE06EE'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: arrow
+    thickness: 6
+    type: line
+    x1: -120.0
+    y1: -120.0
+    x2: -2.1316282072803006e-14
+    y2: -120.0
+    z_index: 4
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#131313'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      All directly connected OSPF routers create Type 1 LSAs.
+      ABRs create type 3 LSAs.
+      Three fundamental rules for creating type 3 LSAs:
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 691.2837897442688
+    y1: -314.41308819887706
+    z_index: 9
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#E68F0E'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Rule #1: If type 1 LSA received, then...
+        1. create type 3 LSA (referencing type 1 LSA)
+        2. send new type 3 LSA into backbone & non-backbone areas.
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 699.2459331553388
+    y1: -236.40362405164473
+    z_index: 9
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#0CB120'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Rule #2: If type 3 LSA received from backbone/ area 0, then...
+        1. regenerate another type 3 LSA
+        2. send new type 3 LSA into non-backbone areas ONLY.
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 691.2837897442688
+    y1: -154.4130881988774
+    z_index: 9
+  - border_color: '#EE06EE00'
+    border_style: ''
+    color: '#EE06EE'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      Rule #3: If type 3 LSA received from non-backbone area, then...
+        1. only insert type 3 LSA into LSDB for the source area
+        2. do not create type 3 LSAs for any additional areas
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 699.2459331553388
+    y1: -76.40362405164495
+    z_index: 9
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: ABR
+    text_font: monospace
+    text_italic: false
+    text_size: 14
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 148.9582464715966
+    y1: -270.5356398327971
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#1D1C1C'
+    rotation: 0
+    text_bold: true
+    text_content: ABR
+    text_font: monospace
+    text_italic: false
+    text_size: 14
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -298.4563021393529
+    y1: -269.9704738628091
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#131313'
+    rotation: 0
+    text_bold: true
+    text_content: ABRs Rules
+    text_font: monospace
+    text_italic: false
+    text_size: 14
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 691.2837897442688
+    y1: -354.41308819887695
+    z_index: 9
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#EE9106'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      4.4.4.4 (r4 l0)
+      10.34.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 240.0
+    y1: 0.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#05B61A'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      3.3.3.3 (r3 L0)
+      4.4.4.4 (r4 l0)
+      10.3.1.0/24
+      10.34.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 0.0
+    y1: -40.0
+    z_index: 3
+  - border_color: '#EF940E'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: arrow
+    line_start: null
+    thickness: 6
+    type: line
+    x1: 200.0
+    y1: -120.0
+    x2: 200.0
+    y2: 0.0
+    z_index: 4
+  - border_color: '#06EE22'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 6
+    type: line
+    x1: 160.0
+    y1: -120.0
+    x2: 160.0
+    y2: 40.0
+    z_index: 4
+  - border_color: '#06EE22'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: arrow
+    thickness: 6
+    type: line
+    x1: 80.0
+    y1: -120.0
+    x2: 160.0
+    y2: -120.0
+    z_index: 4
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#EE9106'
+    rotation: 0
+    text_bold: true
+    text_content: 'Learned via rule #1'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 1324.3022257208604
+    y1: 155.10309543231065
+    z_index: 6
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#0CB120'
+    rotation: 0
+    text_bold: true
+    text_content: 'Learned via rule #2'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 1324.1538008437158
+    y1: 214.42527149174367
+    z_index: 6
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#C205C2'
+    rotation: 0
+    text_bold: true
+    text_content: 'Learned via rule #3'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 1327.132019366075
+    y1: 335.47126173613896
+    z_index: 6
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 681.1330105654164
+    y1: 255.11131865785876
+    x2: 847.3092261276502
+    y2: 25.0
+    z_index: 5
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: 4,2
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 3
+    type: rectangle
+    x1: 120.0
+    y1: -280.0
+    x2: 87.9615721815918
+    y2: 141.0554941290389
+    z_index: 15
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: 4,2
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 3
+    type: rectangle
+    x1: -319.20755340376945
+    y1: -280.0
+    x2: 87.9615721815918
+    y2: 141.0554941290389
+    z_index: 15
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#0CB120'
+    rotation: 0
+    text_bold: true
+    text_content: 'Learned via rule #2'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 1326.9088108208794
+    y1: 311.85752840401364
+    z_index: 6
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#000000'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      r2#sh ip rou os | b Gate
+      Gateway of last resort is not set
+
+            1.0.0.0/32 is subnetted, 1 subnets
+      O        1.1.1.1 [110/11] via 10.12.1.2, 00:13:10, Ethernet0/0
+            3.0.0.0/32 is subnetted, 1 subnets
+      O IA     3.3.3.3 [110/11] via 10.23.1.1, 00:13:06, Ethernet0/1
+            4.0.0.0/32 is subnetted, 1 subnets
+      O IA     4.4.4.4 [110/21] via 10.23.1.1, 00:13:06, Ethernet0/1
+            10.0.0.0/8 is variably subnetted, 8 subnets, 2 masks
+      O IA     10.3.1.0/24 [110/20] via 10.23.1.1, 00:13:06, Ethernet0/1
+      O IA     10.34.1.0/24 [110/20] via 10.23.1.1, 00:13:06, Ethernet0/1
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 700.12513531973
+    y1: 51.98965588728271
+    z_index: 16
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#EE06EE'
+    rotation: 0
+    text_bold: false
+    text_content: X
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: em
+    thickness: 1
+    type: text
+    x1: -320.0
+    y1: -120.0
+    z_index: 18
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#EE06EE'
+    rotation: 0
+    text_bold: false
+    text_content: X
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: em
+    thickness: 1
+    type: text
+    x1: -480.0
+    y1: -280.0
+    z_index: 18
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#C205C2'
+    rotation: 0
+    text_bold: true
+    text_content: 'Learned via rule #3'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 1326.7172429583165
+    y1: 262.1513984751693
+    z_index: 6
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#EE06EE'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      3.3.3.3 (r3 L0)
+      4.4.4.4 (r4 l0)
+      10.3.1.0/24
+      10.34.1.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -120.0
+    y1: -240.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#131313'
+    rotation: 0
+    text_bold: true
+    text_content: OSPF routes for Discontiguous Network from router 2 perspective
+    text_font: monospace
+    text_italic: false
+    text_size: 16
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -360.0
+    y1: -480.0
+    z_index: 9
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#000000'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      r2#sh ip os da
+
+                  OSPF Router with ID (192.168.1.2) (Process ID 1)
+
+      # output omitted
+
+                      Summary Net Link States (Area 0)
+
+      Link ID         ADV Router      Age         Seq#       Checksum
+      1.1.1.1         192.168.1.2     204         0x80000005 0x00A21B
+      10.12.1.0       192.168.1.2     204         0x80000005 0x00A803
+      10.23.1.0       192.168.1.2     819         0x80000001 0x002C78
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -729.3406593406596
+    y1: 295.7142857142858
+    z_index: 19
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#000000'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      r1#sh ip os da
+
+                  OSPF Router with ID (192.168.1.1) (Process ID 1)
+
+      #output omitted
+
+                      Summary Net Link States (Area 12)
+
+      Link ID         ADV Router      Age         Seq#       Checksum
+      2.2.2.2         192.168.1.2     1473        0x80000006 0x000EB4
+      10.2.1.0        192.168.1.2     1473        0x80000006 0x001F95
+      10.23.1.0       192.168.1.2     211         0x80000003 0x00287A
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -1080.0
+    y1: -680.0
+    z_index: 20
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: arrow
+    thickness: 3
+    type: line
+    x1: -720.0
+    y1: -360.0
+    x2: -600.0
+    y2: -240.0
+    z_index: 21
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -1120.0
+    y1: -720.0
+    x2: 640.0
+    y2: 360.0
+    z_index: 22
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: arrow
+    thickness: 3
+    type: line
+    x1: -400.0
+    y1: 280.0
+    x2: -320.0
+    y2: 200.0
+    z_index: 21
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -759.6703296703298
+    y1: 259.34065934065933
+    x2: 640.0
+    y2: 360.0
+    z_index: 22
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 684.86927430168
+    y1: 335.3846153846155
+    x2: 847.3092261276502
+    y2: 25.0
+    z_index: 5
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 684.9791644115704
+    y1: 156.2102197567598
+    x2: 847.3092261276502
+    y2: 25.0
+    z_index: 5
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 682.6714721038778
+    y1: 205.88054942708936
+    x2: 847.3092261276502
+    y2: 25.0
+    z_index: 5
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 682.781362213768
+    y1: 305.1113186578587
+    x2: 847.3092261276502
+    y2: 25.0
+    z_index: 5
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#000000'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      r3#sh ip os da
+
+                  OSPF Router with ID (192.168.1.3) (Process ID 1)
+
+      #output omited
+                      Summary Net Link States (Area 23)
+
+      Link ID         ADV Router      Age         Seq#       Checksum
+      1.1.1.1         192.168.1.2     1382        0x80000001 0x00AA17
+      2.2.2.2         192.168.1.2     1382        0x80000001 0x0018AF
+      3.3.3.3         192.168.1.3     1758        0x80000001 0x00E3DE
+      4.4.4.4         192.168.1.3     1758        0x80000001 0x001A9A
+      10.2.1.0        192.168.1.2     1382        0x80000001 0x002990
+      10.3.1.0        192.168.1.3     1758        0x80000001 0x0017A0
+      10.12.1.0       192.168.1.2     1382        0x80000001 0x00B0FE
+      10.34.1.0       192.168.1.3     1758        0x80000001 0x00A1F6
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -9.625035499620367
+    y1: 294.1758241758241
+    z_index: 23
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: arrow
+    thickness: 3
+    type: line
+    x1: -7.239001204245634
+    y1: 267.95767419393786
+    x2: -80.94371681830171
+    y2: -96.26373626373625
+    z_index: 21
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -39.12087912087907
+    y1: 260.6593406593406
+    x2: 640.0
+    y2: 444.50549450549454
+    z_index: 22
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -22.16369273128703
+    y1: 539.78021978022
+    x2: 575.83536052837
+    y2: 49.34065934065916
+    z_index: 5
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -22.053802621396926
+    y1: 611.2087912087915
+    x2: 575.83536052837
+    y2: 25.0
+    z_index: 5
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#FFFFFF00'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -20.84501141260571
+    y1: 663.1868131868134
+    x2: 575.83536052837
+    y2: 25.0
+    z_index: 5
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3401 bytes\n\
+          !\n! Last configuration change at 16:37:53 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.15\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname r1\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\nip cef\nlogin on-success log\nno ipv6 cef\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184662\n enrollment\
+          \ selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184662\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-131184662\n hash sha512\n!\n!\ncrypto\
+          \ pki certificate chain TP-self-signed-131184662\n certificate self-signed\
+          \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 0D050030\n\
+          \  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 31333131 38343636 32301E17 0D323630 33313431 36333734\n\
+          \  305A170D 33363033 31333136 33373430 5A303031 2E302C06 03550403 0C25494F\n\
+          \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3133 31313834\n\
+          \  36363230 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+          \  82010100 875E41A2 1F17C1A4 2116E013 F08C7DA9 05B53571 160623AC 4DBFAD87\n\
+          \  21BBC014 C975F4E9 E97D6B22 70D67C77 0780AAF2 D364A0B7 F2B91ACD 68EDC648\n\
+          \  AEF58B8F 9F322CB2 71FF670D EB6ADC8E B4269A84 5754B445 1AC89EB5 C0EE0115\n\
+          \  F65B1961 25F6FE7F CDE381E1 70803B4A 236EE1A8 7EA66E57 24292640 36F8ED65\n\
+          \  C6377C41 8FAD23C6 A7F776CF 461D64C7 66AB242F 4C25D4A7 47222224 C5D5538F\n\
+          \  6ABBA9CD 68D149C6 92A3CEB9 08679164 05505CE4 1B35E53A FC438A89 59EA130F\n\
+          \  D9FB611F 6B0CFAB7 5B3317DA 56615677 EA679431 4EBBA2A5 3608FF4D 791C637E\n\
+          \  7DACC91A 926953BE E7B8165C 2EFE9C53 DFD3307B DD84E8A5 1EE444A4 FA0A38A1\n\
+          \  7C2A4191 02030100 01A35330 51301D06 03551D0E 04160414 39550379 925A9F41\n\
+          \  801F4398 C98F9DD9 E181A494 301F0603 551D2304 18301680 14395503 79925A9F\n\
+          \  41801F43 98C98F9D D9E181A4 94300F06 03551D13 0101FF04 05300301 01FF300D\n\
+          \  06092A86 4886F70D 01010D05 00038201 01003FBA 42E963E6 8C9915F7 D3B3DDD4\n\
+          \  EC12E767 FF36095B 59EC730D 308D8CC8 B8B46D0B 78D7B88B 3A849749 73B6AC89\n\
+          \  65FF6BCB 52691E6A E8F752A1 4246F6A7 9D620891 6DCAA7CE 8103C08B 0B09731C\n\
+          \  0888F9BA 4F8165A6 F3C5797B EA0E61E8 85A74D15 82D07C98 5BB52851 663FCE62\n\
+          \  FD83304C 5729F4F8 1ED7D380 C660C56F FDBEB795 4F96ADEB B8AB1F40 BF0B68AC\n\
+          \  125FB070 9B025A0A 6690D590 23B05DD0 BA194CCD 4BCCB727 C2110A7E 29342D81\n\
+          \  D2DE8A3A 7BD593C1 6240C2CF F5FE3426 D883D00C 412B1D9D 1C45DB74 3F247744\n\
+          \  42C9369B 0374C560 96ABEDDB 711A2748 F688F12C 4079B97D 6630B287 42A24A6C\n\
+          \  56BF4C47 184C3AD1 971BE631 34360EA1 6F23\n  \tquit\n!\n!\nmemory free\
+          \ low-watermark processor 80093\n!\n!\nspanning-tree mode rapid-pvst\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface\
+          \ Loopback0\n ip address 1.1.1.1 255.255.255.255\n!\ninterface Ethernet0/0\n\
+          \ ip address 10.12.1.2 255.255.255.0\n ip ospf network point-to-point\n\
+          !\ninterface Ethernet0/1\n no ip address\n shutdown\n!\ninterface Ethernet0/2\n\
+          \ no ip address\n shutdown\n!\ninterface Ethernet0/3\n no ip address\n shutdown\n\
+          !\nrouter ospf 1\n router-id 192.168.1.1\n passive-interface default\n no\
+          \ passive-interface Ethernet0/0\n network 1.1.1.1 0.0.0.0 area 12\n network\
+          \ 10.12.0.0 0.0.255.255 area 12\n!\nip forward-protocol nd\n!\n!\nip http\
+          \ server\nip http secure-server\nip ssh bulk-mode 131072\nno logging btrace\n\
+          !\n!\n!\ncontrol-plane\n!\n!\n!\nline con 0\n exec-timeout 0 0\n logging\
+          \ synchronous\nline aux 0\nline vty 0 4\n exec-timeout 0 0\n login\n transport\
+          \ input ssh\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: r1
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -720
+    y: -200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        slot: 3
+        type: physical
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3549 bytes\n\
+          !\n! Last configuration change at 16:37:43 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.15\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname r2\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\nip cef\nlogin on-success log\nno ipv6 cef\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184661\n enrollment\
+          \ selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184661\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-131184661\n hash sha512\n!\n!\ncrypto\
+          \ pki certificate chain TP-self-signed-131184661\n certificate self-signed\
+          \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 0D050030\n\
+          \  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 31333131 38343636 31301E17 0D323630 33303830 31313733\n\
+          \  305A170D 33363033 30373031 31373330 5A303031 2E302C06 03550403 0C25494F\n\
+          \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3133 31313834\n\
+          \  36363130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+          \  82010100 A0819A0B 957F697D 0D7B1420 F30C9124 D90688DD 30B92CB5 B916B72A\n\
+          \  4D29851C 25DAC129 46D5EDAE CF5A11FA 9FE46F85 E844AEEC FC7AD51A FAC0DE72\n\
+          \  27C4E031 E202AADC 82CE2FE7 12932972 EA549E19 E413C7A7 90FE20D0 9BB16F56\n\
+          \  FE7D82AC AE3FF29A 3000A6BA 4D6C9CA7 4AE8620E 3AFF7566 D455CF3B E4431F38\n\
+          \  D9B5C2AC AB2B4581 FED80C1C C51861F7 F5BBE984 4F38F757 405458A8 D59AAC87\n\
+          \  D84AAADF 6BF162F5 F743BC28 BB9B120F FB279D41 9AAC5F36 27F9F729 C218FAE0\n\
+          \  F5C30EE1 1CD410E1 A11C62EB B7D519E9 979A65AB FA6CC2EF 6E246A39 5B62C307\n\
+          \  A1E1ADF6 74D56359 7D986426 9273D694 FC0B2403 74B0485B 10EB4223 C8475321\n\
+          \  B921B1BB 02030100 01A35330 51301D06 03551D0E 04160414 2FE67888 BC7FEDF2\n\
+          \  AA80040A F97E4BD8 F90FD2A2 301F0603 551D2304 18301680 142FE678 88BC7FED\n\
+          \  F2AA8004 0AF97E4B D8F90FD2 A2300F06 03551D13 0101FF04 05300301 01FF300D\n\
+          \  06092A86 4886F70D 01010D05 00038201 01009B71 7A7D3874 BE4DD3CD BA3D91CB\n\
+          \  09826C6D 47BEB160 16F7D29F 6EC92667 B8996AF6 8EFB6953 41BA7C16 9AF200F9\n\
+          \  4365AD5D 32EF5FD8 CB976541 703467E2 7DDE0996 06494329 4E9B49F9 E08DEE3B\n\
+          \  CF690AE1 E770C443 1C4AF13D 4217E27D AC596094 700FDE1B BF95B4B6 7FE2DD81\n\
+          \  94D956E3 61D90CC0 CDE89779 7C36118C 7A3D5CFD FB0DDB99 5C7E0DE3 C144E9E0\n\
+          \  5EE10C0C EAC8F6C4 9BF345E2 30F0C9B6 88CB1661 668447E8 0496A76F 62F45A9F\n\
+          \  A45546CF 8E04EC70 18788CE2 562704F3 B35F9943 A79FDBFA 64B9C282 9743D669\n\
+          \  E7321D50 4BB85A99 89274553 CAA52C0E A872F702 DA38B75C 29254070 3CC6D14E\n\
+          \  5F1A6816 B9260289 E163E02E F20AFA17 971C\n  \tquit\n!\n!\nmemory free\
+          \ low-watermark processor 80093\n!\n!\nspanning-tree mode rapid-pvst\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface\
+          \ Loopback0\n ip address 2.2.2.2 255.255.255.255\n ip ospf 1 area 0\n!\n\
+          interface Ethernet0/0\n ip address 10.12.1.1 255.255.255.0\n ip ospf network\
+          \ point-to-point\n!\ninterface Ethernet0/1\n ip address 10.23.1.2 255.255.255.0\n\
+          \ ip ospf network point-to-point\n!\ninterface Ethernet0/2\n ip address\
+          \ 10.2.1.1 255.255.255.0\n!\ninterface Ethernet0/3\n no ip address\n shutdown\n\
+          !\nrouter ospf 1\n router-id 192.168.1.2\n passive-interface default\n no\
+          \ passive-interface Ethernet0/0\n no passive-interface Ethernet0/1\n network\
+          \ 10.2.0.0 0.0.255.255 area 0\n network 10.12.0.0 0.0.255.255 area 12\n\
+          \ network 10.23.0.0 0.0.255.255 area 23\n!\nip forward-protocol nd\n!\n\
+          !\nip http server\nip http secure-server\nip ssh bulk-mode 131072\nno logging\
+          \ btrace\n!\n!\n!\ncontrol-plane\n!\n!\n!\nline con 0\n exec-timeout 0 0\n\
+          \ logging synchronous\nline aux 0\nline vty 0 4\n exec-timeout 0 0\n login\n\
+          \ transport input ssh\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: r2
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -280
+    y: -200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        slot: 3
+        type: physical
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3563 bytes\n\
+          !\n! Last configuration change at 16:37:43 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.15\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname r3\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\nip cef\nlogin on-success log\nno ipv6 cef\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184663\n enrollment\
+          \ selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184663\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-131184663\n hash sha512\n!\n!\ncrypto\
+          \ pki certificate chain TP-self-signed-131184663\n certificate self-signed\
+          \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 0D050030\n\
+          \  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 31333131 38343636 33301E17 0D323630 33303830 31313733\n\
+          \  335A170D 33363033 30373031 31373333 5A303031 2E302C06 03550403 0C25494F\n\
+          \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3133 31313834\n\
+          \  36363330 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+          \  82010100 BD4BCA71 D9672A3E C35F0DDD 71A9089D BF4C419C A9B325DC 1E519C21\n\
+          \  EC9EE047 57ADAA3B D9AACBFC 75BFDFF0 CCC52BC6 42123036 ED1949F9 01AA2DE9\n\
+          \  F48F0131 F92388F2 1559A4D5 57D0C741 7FFEB835 109C2941 657C6AB9 D2C4B658\n\
+          \  D220C8DB 6A3C3D5C D136A695 CDF236F5 39A0D0B6 5F7B36D5 E77EC18E 20010DA4\n\
+          \  5F8E819C 5D865818 92215143 07476A99 21D09749 1281EDE0 B609EDB4 B9B30FCB\n\
+          \  1E12437B 0C8B0007 B25B5780 128DDE6D C81D503B 687C1017 FE854DC7 10D7425D\n\
+          \  01F845E2 2010FE58 14F96110 915C8AD0 0C52F8E6 2AA55CCD 2D0BF2F4 BCB561DF\n\
+          \  FDAF067C A783F520 55A10062 67AC6BD0 4F5F12AF F5B8B305 F3B74B9C 71DA0D72\n\
+          \  DFCBFF13 02030100 01A35330 51301D06 03551D0E 04160414 A9D3EED3 224E731D\n\
+          \  433A36F7 8AE739DC D413ADA3 301F0603 551D2304 18301680 14A9D3EE D3224E73\n\
+          \  1D433A36 F78AE739 DCD413AD A3300F06 03551D13 0101FF04 05300301 01FF300D\n\
+          \  06092A86 4886F70D 01010D05 00038201 01008A67 16EAF7A7 8D762D5B E8404FC5\n\
+          \  3F91E783 E9B3A2C8 E47111C0 675F9514 4B756291 5CB8C1EE 6D2843DC FA2426BE\n\
+          \  0271CA14 10FF47E5 0737B439 2FA0E6B7 94D29BBB 4541F4BB 57433160 AFA2DA80\n\
+          \  B2BCF99D 7C7DB309 809CCF76 08BDDAE6 7B77D920 4DF1D022 027928F4 A6832FB5\n\
+          \  59340C34 5CC14296 75A11B5E 6283D5E1 AD419A3B C04522A6 87C59E10 DA81AC2B\n\
+          \  1E23BA33 EC8CC1E8 A5C270FC F29C76C2 7C8A2426 11658406 980B92B1 D5205016\n\
+          \  8014E65D B1A3E539 08B8AB9E CC1C1A54 A68082C3 1B9346E6 7906CDD0 C99F68BB\n\
+          \  B2351E78 E87B2B1D DCC7F3CD 52025041 603C5D62 8EF2F931 C25A64D7 1D4C7273\n\
+          \  C3EA63AD 04414FE2 05673F77 66186BB1 ACD3\n  \tquit\n!\n!\nmemory free\
+          \ low-watermark processor 80093\n!\n!\nspanning-tree mode rapid-pvst\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface\
+          \ Loopback0\n ip address 3.3.3.3 255.255.255.255\n!\ninterface Ethernet0/0\n\
+          \ ip address 10.34.1.1 255.255.255.0\n ip ospf network point-to-point\n\
+          !\ninterface Ethernet0/1\n ip address 10.23.1.1 255.255.255.0\n ip ospf\
+          \ network point-to-point\n!\ninterface Ethernet0/2\n ip address 10.3.1.1\
+          \ 255.255.255.0\n!\ninterface Ethernet0/3\n no ip address\n shutdown\n!\n\
+          router ospf 1\n router-id 192.168.1.3\n passive-interface default\n no passive-interface\
+          \ Ethernet0/0\n no passive-interface Ethernet0/1\n network 3.3.3.3 0.0.0.0\
+          \ area 0\n network 10.3.0.0 0.0.255.255 area 0\n network 10.23.0.0 0.0.255.255\
+          \ area 23\n network 10.34.0.0 0.0.255.255 area 34\n!\nip forward-protocol\
+          \ nd\n!\n!\nip http server\nip http secure-server\nip ssh bulk-mode 131072\n\
+          no logging btrace\n!\n!\n!\ncontrol-plane\n!\n!\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\nline aux 0\nline vty 0 4\n exec-timeout 0 0\n\
+          \ login\n transport input ssh\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: r3
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 160
+    y: -200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        slot: 3
+        type: physical
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 1193 bytes
+          !
+          ! Last configuration change at 16:37:43 UTC Sat Mar 14 2026
+          !
+          version 17.15
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          !
+          hostname r4
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip cef
+          login on-success log
+          no ipv6 cef
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          memory free low-watermark processor 80093
+          !
+          !
+          spanning-tree mode rapid-pvst
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Loopback0
+           ip address 4.4.4.4 255.255.255.255
+          !
+          interface Ethernet0/0
+           ip address 10.34.1.2 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Ethernet0/1
+           no ip address
+           shutdown
+          !
+          interface Ethernet0/2
+           no ip address
+           shutdown
+          !
+          interface Ethernet0/3
+           no ip address
+           shutdown
+          !
+          router ospf 1
+           router-id 192.168.1.4
+           passive-interface default
+           no passive-interface Ethernet0/0
+           network 4.4.4.4 0.0.0.0 area 34
+           network 10.34.0.0 0.0.255.255 area 34
+          !
+          ip forward-protocol nd
+          !
+          !
+          ip http server
+          ip http secure-server
+          ip ssh bulk-mode 131072
+          no logging btrace
+          !
+          !
+          !
+          control-plane
+          !
+          !
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login
+           transport input ssh
+          !
+          !
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: r4
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 600
+    y: -200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        slot: 3
+        type: physical
+links:
+  - id: l0
+    n1: n1
+    n2: n0
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: r2-Ethernet0/0<->r1-Ethernet0/0
+  - id: l1
+    n1: n2
+    n2: n3
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: r3-Ethernet0/0<->r4-Ethernet0/0
+  - id: l2
+    n1: n1
+    n2: n2
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: r2-Ethernet0/1<->r3-Ethernet0/1
+lab:
+  description: |-
+    Discontiguous Networks
+    ABR rules for creating type 3 LSAs
+  notes: ''
+  title: ENCOR Ch. 9 Adv. OSPF - Discontiguous Networks
+  version: 0.3.0
