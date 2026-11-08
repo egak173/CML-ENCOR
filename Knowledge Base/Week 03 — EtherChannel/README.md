@@ -18,15 +18,9 @@ A reproducible **Cisco Modeling Labs (CML2)** exercise for Link Aggregation Cont
 
 ## Topology
 
-```text
-                        SW1
-                 VLAN 10 root
-                /           \
-       trunk Et0/1         Po1 (two links)
-              /               \
-             SW3 ------------- SW2
-                trunk           VLAN 20 priority configured
-```
+
+<img width="1448" height="1086" alt="Week 03 - Cisco Study Lab Network Topology" src="https://github.com/user-attachments/assets/48fdc647-de41-471a-ac2d-0afd14e9ac1e" />
+
 
 ### Physical interface map
 
